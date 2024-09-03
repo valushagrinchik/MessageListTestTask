@@ -1,3 +1,3 @@
 # Message list test task
 
-[a relative link](./FullStackJSTestTask.pdf)
+[FullStackJSTestTask.pdf](./FullStackJSTestTask.pdf)
