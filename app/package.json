@@ -1,0 +1,21 @@
+{
+    "name": "app",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "format": "pnpm prettier --write src/*.{js,jsx} src/**/*.{js,jsx}"
+    },
+    "dependencies": {
+        "@tanstack/react-query": "^5.53.3",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.3.1",
+        "vite": "^5.4.1"
+    }
+}

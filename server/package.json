@@ -1,0 +1,21 @@
+{
+    "name": "message-list-test-task",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "format": "pnpm prettier --write src/*.js src/**/*.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "ws": "^8.18.0"
+    },
+    "devDependencies": {
+        "prettier": "3.3.3"
+    }
+}
