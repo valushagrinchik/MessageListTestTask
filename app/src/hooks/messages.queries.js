@@ -51,7 +51,7 @@ export const useWsMessageEventsListener = () => {
                         return
                     }
                     default: {
-                        console.log('unknown event')
+                        console.log('Unknown event')
                     }
                 }
             })

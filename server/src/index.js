@@ -8,6 +8,7 @@ import { WebSocketServer } from 'ws'
 
 const hostname = process.env.HOST || 'localhost'
 const port = process.env.PORT || 3000
+const wsPort = process.env.WS_PORT || 4000
 
 const wsEventManager = new WSEventManager()
 const messageStorage = new MessageStorage(9, wsEventManager)
@@ -60,12 +61,10 @@ export const wss = new WebSocketServer({
 })
 
 wss.on('connection', function connection(ws) {
-    console.log(wss.clients, wss.clients.size, 'clients')
-    // console.log(`WS running at http://${hostname}:4000/`, wss.clients);
+    console.log(`WS server running at ws://${hostname}:${wsPort}/`)
     ws.on('error', console.error)
 
     ws.on('message', function message(data) {
-        console.log('received: %s', data)
         wss.clients.forEach((client) => client.send(data))
     })
 })
